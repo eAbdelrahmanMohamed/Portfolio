@@ -1,0 +1,81 @@
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'sana-serif'
+        }
+        
+        body {
+            background-color: #080808;
+            color: #fff;
+        }
+        
+        #header {
+            height: 100vh;
+            width: 100%;
+            background-image: url('../images/me3-iso.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+        }
+        
+        #me {
+            transform: translateX(80vw);
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+        }
+        
+        #container ul,
+        #container nav ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            font-size: 18px;
+            border-bottom-width: 0px;
+            transition: 0.5s;
+        }
+        /*#contanier nav ul li a ::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: aquamarine;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        */
+        
+        nav ul li a :hover {
+            border-bottom: 1px solid aquamarine;
+            border-bottom-width: 100%;
+        }
+        
+        ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        /* ------------------------------------------------------------------ */
+        
+        .header-text {
+            margin-top: 20%;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+        
+        .haeder-text h1 {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        
+        .header-text h1 span {
+            color: aquamarine;
+            font-size: larger;
+        }
