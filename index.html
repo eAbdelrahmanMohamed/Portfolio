@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#header">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
                         <a href="#">Services</a>
@@ -44,13 +44,62 @@
     <div id="about">
         <div class="contanier">
             <div class="row">
-                <div class="about-col-1"></div>
-                <div class="about-col-2"></div>
+                <div class="about-col-1">
+                    <img src="./images/me3-iso.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About ME</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis numquam voluptatum in fugiat id quia delectus harum, quo fugit aliquid sunt enim excepturi cupiditate voluptate dicta consequuntur exercitationem ea pariatur.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span></li>
+                            <li>HTML</li>
+                            <li>CSS && CSS FrameWork</li>
+                            <li>JAVASRIPT && Jquery</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>FireBase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Web Developer intern</span></li>
+                            <li>Sparks Foundation <img src="https://media-exp1.licdn.com/dms/image/C560BAQFgHU3sTF4LfQ/company-logo_200_200/0/1519895156650?e=1669248000&v=beta&t=tB67s4vBq4azLxeEoRq6da_ebt3951rFozwaUh-rz1Y" alt="" width="50px" height="50px"></li>
+                            <li>CSS && CSS FrameWork</li>
+                            <li>JAVASRIPT && Jquery</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>FireBase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Social Hackers Academy</span></li>
+                            <li>Front-end Development</li><br>
+                            <li><span>Helwan University</span></li>
+                            <li>Businness Information Systems</li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list"></div>
+        </div>
+    </div>
 </body>
-<script src="./src/main.js "></script>
+<script src="../src/main.js"></script>
 
 </html>

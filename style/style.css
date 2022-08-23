@@ -1,46 +1,47 @@
-        * {
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            font-family: 'Poppins', 'sana-serif'
-        }
-        
-        body {
-            background-color: #080808;
-            color: #fff;
-        }
-        
-        #header {
-            height: 100vh;
-            width: 100%;
-            background-image: url('../images/me3-iso.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-        }
-        
-        #me {
-            transform: translateX(80vw);
-        }
-        
-        #container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 10px;
-        }
-        
-        #container ul,
-        #container nav ul li a {
-            list-style: none;
-            text-decoration: none;
-            color: white;
-            padding: 8px;
-            font-size: 18px;
-            border-bottom-width: 0px;
-            transition: 0.5s;
-        }
-        /*#contanier nav ul li a ::after {
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                font-family: 'Poppins', 'sana-serif'
+            }
+            
+            body {
+                background-color: #080808;
+                color: #fff;
+            }
+            
+            #header {
+                height: 100vh;
+                width: 100%;
+                background-image: url('../images/me3-iso.png');
+                mix-blend-mode: difference;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+            }
+            
+            #me {
+                transform: translateX(80vw);
+            }
+            
+            #container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 10px;
+            }
+            
+            #container ul,
+            #container nav ul li a {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+                padding: 8px;
+                font-size: 18px;
+                border-bottom-width: 0px;
+                transition: 0.5s;
+            }
+            /*#contanier nav ul li a ::after {
             content: "";
             width: 0;
             height: 3px;
@@ -51,31 +52,108 @@
             transition: 0.5s;
         }
         */
-        
-        nav ul li a :hover {
-            border-bottom: 1px solid aquamarine;
-            border-bottom-width: 100%;
-        }
-        
-        ul li {
-            display: inline-block;
-            list-style: none;
-            margin: 10px 20px;
-        }
-        /* ------------------------------------------------------------------ */
-        
-        .header-text {
-            margin-top: 20%;
-            font-size: 20px;
-            margin-left: 25px;
-        }
-        
-        .haeder-text h1 {
-            font-size: 60px;
-            margin-top: 20px;
-        }
-        
-        .header-text h1 span {
-            color: aquamarine;
-            font-size: larger;
-        }
+            
+            nav ul li a :hover {
+                border-bottom: 1px solid aquamarine;
+                border-bottom-width: 100%;
+            }
+            
+            ul li {
+                display: inline-block;
+                list-style: none;
+                margin: 10px 20px;
+            }
+            /* ------------------------------------------------------------------ */
+            
+            .header-text {
+                margin-top: 20%;
+                font-size: 20px;
+                margin-left: 25px;
+            }
+            
+            .haeder-text h1 {
+                font-size: 60px;
+                margin-top: 20px;
+            }
+            
+            .header-text h1 span {
+                color: aquamarine;
+                font-size: larger;
+            }
+            /* -------------------------------------------------------------- */
+            
+            #about {
+                padding: 80px 0px;
+                color: white;
+            }
+            
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .about-col-1 {
+                flex-basis: 35%;
+            }
+            
+            .about-col-1 img {
+                width: 50%;
+                border-radius: 15px;
+            }
+            
+            .about-col-2 {
+                flex-basis: 60%;
+            }
+            
+            .sub-title {
+                font-size: 60px;
+                font-weight: 600;
+                color: white;
+            }
+            
+            .tab-titles {
+                display: flex;
+                margin: 20px 0 40px;
+            }
+            
+            .tab-links {
+                margin-right: 50px;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+            }
+            
+            .tab-links::after {
+                content: '';
+                width: 0;
+                height: 3px;
+                background: #ff004f;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                transition: 0.5s;
+            }
+            
+            .tab-links.active-link::after {
+                width: 50%;
+            }
+            
+            .tab-content ul li {
+                list-style: none;
+                margin: 10px 0;
+            }
+            
+            .tab-content ul li span {
+                color: #ff004f;
+                font-size: 14px;
+            }
+            
+            .tab-content {
+                display: none;
+            }
+            
+            .tab-content.active-tab {
+                display: block;
+            }
